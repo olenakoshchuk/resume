@@ -36,6 +36,42 @@
                                 age:
                                     {{age}}
                                     <br>
+                        {{#if groups}}
+                        groups:
+                        <ul>
+                            {{#each groups}}
+                                <li>
+                                    id:
+                                        {{id}}
+                                        <br>
+                                    name:
+                                        {{name}}
+                                        <br>
+                                    description:
+                                        {{description}}
+                                        <br>
+                                <ul>
+                                {{#each members}}
+                                    <li>
+                                        id:
+                                            {{id}}
+                                            <br>
+                                        name:
+                                            {{name}}
+                                            <br>
+                                        gender:
+                                            {{gender}}
+                                            <br>
+                                        age:
+                                            {{age}}
+                                            <br>
+                                    </li>
+                                {{/each}}
+                                </ul>
+                                </li>
+                            {{/each}}
+                        </ul>
+                        {{/if}}
                                 mutual friends:
                                 <ul>
                                 {{#each mutual_friends}}

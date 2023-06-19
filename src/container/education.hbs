@@ -3,7 +3,7 @@
         <main>
             <section>
                 {{> title big=true data="My educationss" }}
-                <ul>
+                <ul class="ps-5">
                     {{#each education}}
                         <li>
                             {{name}}
@@ -14,7 +14,7 @@
             </section>
             <section>
                 {{> title big=false data="My certificates" }}
-                    <ul>
+                    <ul class="ps-5">
                         {{#each certificates}}
                             <li>
                                 {{name}} ({{id}})
